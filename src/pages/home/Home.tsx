@@ -1,12 +1,11 @@
-
-import Layout from '@/components/Layout';
+import { Layout } from '@/components'
 
 const Home = () => {
   return (
     <Layout>
-      <div>Home</div>
+      <h1>Home</h1>
     </Layout>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

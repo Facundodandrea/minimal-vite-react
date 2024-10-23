@@ -1,19 +1,20 @@
+import React, { ReactNode } from 'react'
+import { Header, Navbar, Footer } from '@/components'
+import './Layout.css'
 
-import React from 'react';
-import Header from '@/components/Header';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import './Layout.css';
+interface LayoutProps {
+  children: ReactNode
+}
 
-const Layout = ({ children }) => {
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="layout">
+    <div className='layout'>
       <Header />
       <Navbar />
       <main>{children}</main>
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout

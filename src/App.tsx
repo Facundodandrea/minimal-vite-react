@@ -1,18 +1,15 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Home, NotFound } from '@/pages';
-import Layout from '@/components/Layout';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { Home, NotFound } from '@/pages'
 
 const App = () => {
   return (
     <Router>
-      <Layout>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='*' element={<NotFound />} />
-        </Routes>
-      </Layout>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='*' element={<NotFound />} />
+      </Routes>
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App
