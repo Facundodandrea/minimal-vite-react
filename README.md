@@ -1,50 +1,55 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Project Title
 
-Currently, two official plugins are available:
+A brief description of what this project does and who it's for
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Minimal Vite React
 
-## Expanding the ESLint configuration
+Este es un boilerplate básico para comenzar proyectos de React utilizando Vite y TypeScript. Incluye configuraciones iniciales de ESLint, Prettier y Husky para facilitar el desarrollo.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tabla de Contenidos
 
-- Configure the top-level `parserOptions` property like this:
+- [Project Title](#project-title)
+- [Minimal Vite React](#minimal-vite-react)
+  - [Tabla de Contenidos](#tabla-de-contenidos)
+  - [Características](#características)
+  - [Requisitos Previos](#requisitos-previos)
+  - [Instalación](#instalación)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Características
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- Estructura básica de carpetas para componentes y páginas.
+- Configuración de ESLint y Prettier para el formateo de código.
+- Integración de Husky para gestionar hooks de Git.
+- Soporte para React Router para la navegación.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Requisitos Previos
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Asegúrate de tener instalado:
+
+- [Node.js](https://nodejs.org/) (versión 14 o superior)
+- [pnpm](https://pnpm.io/) (administrador de paquetes)
+
+## Instalación
+
+1. Clona el repositorio:
+
+   ```bash
+   git clone https://github.com/facundodandrea/minimal-vite-react.git
+
+2. Navega al directorio del proyecto:
+
+   ```bash
+   cd minimal-vite-react
+
+3. Instala las dependencias:
+
+   ```bash
+   pnpm install
+
+4. Inicia el servidor de desarrollo::
+
+   ```bash
+   pnpm run dev
+   o
+   pnpm dev 
